@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_gray_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" 
+        android:background="@drawable/item_press_selector"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/person" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_textview_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/item_name_color"
+                android:textSize="@dimen/itme_name_size" />
+
+            <TextView
+                android:id="@+id/id_textView_localUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/setting_personProgramer"
+                android:textColor="@color/item_content_color"
+                android:textSize="@dimen/item_content_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_marginTop="30dp"
+        android:id="@+id/id_textview_changeclient"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/setting_change_account" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/setting_changeClient"
+            android:textColor="@color/item_name_color"
+            android:textSize="@dimen/itme_name_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#46ac5e"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+   <com.yzx.mydefineview.SettingCheckItem
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/info_show_normal"
+        >
+
+        <!--  <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/setting_quite" />-->
+
+        <TextView
+            android:id="@+id/id_textView_quite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/setting_quite"
+            android:textColor="@color/item_name_color"
+            android:background="@drawable/item_press_selector"
+            android:drawableLeft="@drawable/setting_quite"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/itme_name_size" />
+    </LinearLayout>
+
+</LinearLayout>
